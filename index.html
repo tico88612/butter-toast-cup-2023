@@ -82,7 +82,7 @@
         </div>
         <button class="ts-button is-fluid" :class="{ 'is-disabled': !isLower }" @click="cal()">儲存為最高紀錄</button>
         <button class="ts-button is-fluid is-negative is-outlined" @click="cleanHighest()">清除最高紀錄</button>
-        <button class="ts-button is-fluid is-negative" @click="cleanAll()">清除所有欄位</button>
+        <button class="ts-button is-fluid is-negative" @click="cleanAll()">清除數量</button>
       </div>
     </div>
     <div class="ts-space is-big"></div>
@@ -151,7 +151,7 @@
         this.maxScore = 0;
       },
       cleanAll() {
-        this.perfect = this.great = this.good = this.bad = this.maxScore = 0;
+        this.perfect = this.great = this.good = this.bad = 0;
       }
     }
   }).mount('#app')
