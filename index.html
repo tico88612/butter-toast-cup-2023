@@ -42,7 +42,7 @@
         本次比賽計算公式
       </div>
       <div class="ts-content">
-        $Perfect \times 1.0\\ + Great \times 0.8\\ + Good \times 0.6\\ + Bad \times 0.3$
+        $Perfect \times 3\\ + Great \times 2\\ + Good \times 1$
       </div>
     </div>
     <div class="ts-box is-not-minimal">
@@ -50,7 +50,7 @@
         本次比賽計算公式
       </div>
       <div class="ts-content">
-        $Perfect + Great \times 0.8 + Good \times 0.6 + Bad \times 0.3$
+        $Perfect \times 3 + Great \times 2 + Good \times 1$
       </div>
     </div>
     <div class="ts-space"></div>
@@ -136,7 +136,7 @@
     },
     computed: {
       score: function() {
-        let score = this.perfect + this.great * 0.8 + this.good * 0.6 + this.bad * 0.3;
+        let score = this.perfect * 3 + this.great * 2 + this.good;
         return Math.round10(score, -3)
       },
       isLower: function() {
